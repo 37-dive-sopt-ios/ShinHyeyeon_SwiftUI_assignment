@@ -6,17 +6,36 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		24D6ED422EEB026800FF32DD /* SwiftUI_assignmentApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24D6ED302EEB026800FF32DD /* SwiftUI_assignmentApp.swift */; };
+		24D6ED432EEB026800FF32DD /* Font+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24D6ED322EEB026800FF32DD /* Font+.swift */; };
+		24D6ED442EEB026800FF32DD /* BannerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24D6ED342EEB026800FF32DD /* BannerView.swift */; };
+		24D6ED452EEB026800FF32DD /* CategoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24D6ED352EEB026800FF32DD /* CategoryView.swift */; };
+		24D6ED462EEB026800FF32DD /* HeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24D6ED362EEB026800FF32DD /* HeaderView.swift */; };
+		24D6ED472EEB026800FF32DD /* MartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24D6ED372EEB026800FF32DD /* MartView.swift */; };
+		24D6ED482EEB026800FF32DD /* RankingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24D6ED382EEB026800FF32DD /* RankingView.swift */; };
+		24D6ED492EEB026800FF32DD /* TestView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24D6ED392EEB026800FF32DD /* TestView.swift */; };
+		24D6ED4A2EEB026800FF32DD /* Pretendard-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 24D6ED3B2EEB026800FF32DD /* Pretendard-Bold.otf */; };
+		24D6ED4B2EEB026800FF32DD /* Pretendard-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 24D6ED3C2EEB026800FF32DD /* Pretendard-Regular.otf */; };
+		24D6ED4C2EEB026800FF32DD /* Pretendard-SemiBold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 24D6ED3D2EEB026800FF32DD /* Pretendard-SemiBold.otf */; };
+		24D6ED4D2EEB026800FF32DD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 24D6ED3F2EEB026800FF32DD /* Assets.xcassets */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXFileReference section */
 		24D6ECC82EEAE18D00FF32DD /* SwiftUI_assignment.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftUI_assignment.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		24D6ED302EEB026800FF32DD /* SwiftUI_assignmentApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUI_assignmentApp.swift; sourceTree = "<group>"; };
+		24D6ED322EEB026800FF32DD /* Font+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Font+.swift"; sourceTree = "<group>"; };
+		24D6ED342EEB026800FF32DD /* BannerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BannerView.swift; sourceTree = "<group>"; };
+		24D6ED352EEB026800FF32DD /* CategoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryView.swift; sourceTree = "<group>"; };
+		24D6ED362EEB026800FF32DD /* HeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderView.swift; sourceTree = "<group>"; };
+		24D6ED372EEB026800FF32DD /* MartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MartView.swift; sourceTree = "<group>"; };
+		24D6ED382EEB026800FF32DD /* RankingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RankingView.swift; sourceTree = "<group>"; };
+		24D6ED392EEB026800FF32DD /* TestView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestView.swift; sourceTree = "<group>"; };
+		24D6ED3B2EEB026800FF32DD /* Pretendard-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Pretendard-Bold.otf"; sourceTree = "<group>"; };
+		24D6ED3C2EEB026800FF32DD /* Pretendard-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Pretendard-Regular.otf"; sourceTree = "<group>"; };
+		24D6ED3D2EEB026800FF32DD /* Pretendard-SemiBold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Pretendard-SemiBold.otf"; sourceTree = "<group>"; };
+		24D6ED3F2EEB026800FF32DD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 /* End PBXFileReference section */
-
-/* Begin PBXFileSystemSynchronizedRootGroup section */
-		24D6ECCA2EEAE18D00FF32DD /* SwiftUI_assignment */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			path = SwiftUI_assignment;
-			sourceTree = "<group>";
-		};
-/* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		24D6ECC52EEAE18D00FF32DD /* Frameworks */ = {
@@ -32,7 +51,7 @@
 		24D6ECBF2EEAE18D00FF32DD = {
 			isa = PBXGroup;
 			children = (
-				24D6ECCA2EEAE18D00FF32DD /* SwiftUI_assignment */,
+				24D6ED412EEB026800FF32DD /* SwiftUI_assignment */,
 				24D6ECC92EEAE18D00FF32DD /* Products */,
 			);
 			sourceTree = "<group>";
@@ -43,6 +62,65 @@
 				24D6ECC82EEAE18D00FF32DD /* SwiftUI_assignment.app */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		24D6ED312EEB026800FF32DD /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				24D6ED302EEB026800FF32DD /* SwiftUI_assignmentApp.swift */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		24D6ED332EEB026800FF32DD /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				24D6ED322EEB026800FF32DD /* Font+.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		24D6ED3A2EEB026800FF32DD /* Presentaion */ = {
+			isa = PBXGroup;
+			children = (
+				24D6ED362EEB026800FF32DD /* HeaderView.swift */,
+				24D6ED352EEB026800FF32DD /* CategoryView.swift */,
+				24D6ED342EEB026800FF32DD /* BannerView.swift */,
+				24D6ED372EEB026800FF32DD /* MartView.swift */,
+				24D6ED382EEB026800FF32DD /* RankingView.swift */,
+				24D6ED392EEB026800FF32DD /* TestView.swift */,
+			);
+			path = Presentaion;
+			sourceTree = "<group>";
+		};
+		24D6ED3E2EEB026800FF32DD /* Font */ = {
+			isa = PBXGroup;
+			children = (
+				24D6ED3B2EEB026800FF32DD /* Pretendard-Bold.otf */,
+				24D6ED3C2EEB026800FF32DD /* Pretendard-Regular.otf */,
+				24D6ED3D2EEB026800FF32DD /* Pretendard-SemiBold.otf */,
+			);
+			path = Font;
+			sourceTree = "<group>";
+		};
+		24D6ED402EEB026800FF32DD /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				24D6ED3E2EEB026800FF32DD /* Font */,
+				24D6ED3F2EEB026800FF32DD /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		24D6ED412EEB026800FF32DD /* SwiftUI_assignment */ = {
+			isa = PBXGroup;
+			children = (
+				24D6ED312EEB026800FF32DD /* Application */,
+				24D6ED332EEB026800FF32DD /* Extension */,
+				24D6ED3A2EEB026800FF32DD /* Presentaion */,
+				24D6ED402EEB026800FF32DD /* Resources */,
+			);
+			path = SwiftUI_assignment;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -59,9 +137,6 @@
 			buildRules = (
 			);
 			dependencies = (
-			);
-			fileSystemSynchronizedGroups = (
-				24D6ECCA2EEAE18D00FF32DD /* SwiftUI_assignment */,
 			);
 			name = SwiftUI_assignment;
 			packageProductDependencies = (
@@ -109,6 +184,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				24D6ED4A2EEB026800FF32DD /* Pretendard-Bold.otf in Resources */,
+				24D6ED4B2EEB026800FF32DD /* Pretendard-Regular.otf in Resources */,
+				24D6ED4C2EEB026800FF32DD /* Pretendard-SemiBold.otf in Resources */,
+				24D6ED4D2EEB026800FF32DD /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -119,6 +198,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				24D6ED422EEB026800FF32DD /* SwiftUI_assignmentApp.swift in Sources */,
+				24D6ED432EEB026800FF32DD /* Font+.swift in Sources */,
+				24D6ED442EEB026800FF32DD /* BannerView.swift in Sources */,
+				24D6ED452EEB026800FF32DD /* CategoryView.swift in Sources */,
+				24D6ED462EEB026800FF32DD /* HeaderView.swift in Sources */,
+				24D6ED472EEB026800FF32DD /* MartView.swift in Sources */,
+				24D6ED482EEB026800FF32DD /* RankingView.swift in Sources */,
+				24D6ED492EEB026800FF32DD /* TestView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
