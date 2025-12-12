@@ -11,11 +11,11 @@ struct MainTabView: View {
     
     var body: some View {
         TabView {
-            TabItemView(view: FeedView(), title: "홈", icon: .tabIcon)
-            TabItemView(view: ShoppingView(), title: "장보기·쇼핑", icon: .tabIcon1)
-            TabItemView(view: FavoriteView(), title: "찜", icon: .tabIcon2)
-            TabItemView(view: OrderHistoryView(), title: "주문내역", icon: .tabIcon3)
-            TabItemView(view: MyBaeminView(), title: "마이배민", icon: .tabIcon4)
+            TabItem(view: FeedView(), title: "홈", icon: .tabIcon)
+            TabItem(view: ShoppingView(), title: "장보기·쇼핑", icon: .tabIcon1)
+            TabItem(view: FavoriteView(), title: "찜", icon: .tabIcon2)
+            TabItem(view: OrderHistoryView(), title: "주문내역", icon: .tabIcon3)
+            TabItem(view: MyBaeminView(), title: "마이배민", icon: .tabIcon4)
         }
         .onAppear {
             let appearance = UITabBarAppearance()
