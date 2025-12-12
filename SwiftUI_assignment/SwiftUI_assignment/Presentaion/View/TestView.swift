@@ -15,6 +15,7 @@ struct TestView: View {
                 HeaderView()
                 CategoryView()
                 MartView()
+                BannerView()
                 Spacer()
             }
         }

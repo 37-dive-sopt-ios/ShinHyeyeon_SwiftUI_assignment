@@ -8,14 +8,22 @@
 import SwiftUI
 
 struct BannerView: View {
+    
+    private let bannerImages = ["banner1", "banner2", "banner3"]
+    @State private var index = 0
+    
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
+        TabView(selection: $index) {
+            ForEach(bannerImages.indices, id: \.self) { i in
+                Image(bannerImages[i])
+                    .resizable()
+                    .scaledToFill()
+                    .frame(height: 114)
+                    .tag(i)
+            }
         }
-        .padding()
+        .tabViewStyle(.page(indexDisplayMode: .never))
+        .frame(height: 114)
     }
 }
 
