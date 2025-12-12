@@ -11,12 +11,16 @@ struct TestView: View {
     var body: some View {
         ZStack {
             Color.baeminBackgroundWhite
-            VStack(spacing: 0) {
-                HeaderView()
-                CategoryView()
-                MartView()
-                BannerView()
-                Spacer()
+            
+            ScrollView(.vertical, showsIndicators: false) {
+                VStack(spacing: 0) {
+                    HeaderView()
+                    CategoryView()
+                    MartView()
+                    BannerView()
+                    RankingView()
+                    Spacer()
+                }
             }
         }
         .ignoresSafeArea()

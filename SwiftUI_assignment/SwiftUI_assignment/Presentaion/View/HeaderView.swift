@@ -43,6 +43,10 @@ struct HeaderView: View {
             }
             .padding(.horizontal, 17)
             .padding(.vertical, 13)
+            .background(
+                RoundedRectangle(cornerRadius: 50)
+                    .fill(Color.white)
+            )
             .overlay(
                 RoundedRectangle(cornerRadius: 50)
                     .stroke(.baeminBlack, lineWidth: 1)
