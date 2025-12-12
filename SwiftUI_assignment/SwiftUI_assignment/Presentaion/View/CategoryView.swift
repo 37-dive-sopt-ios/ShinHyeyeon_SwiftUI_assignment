@@ -61,22 +61,6 @@ struct CategoryView: View {
                     }
                     .padding(.horizontal, 16)
                     .padding(.top, 12)
-
-                    Divider().padding(.top, 12)
-
-                    Button { } label: {
-                        HStack(spacing: 4) {
-                            Text(viewModel.topCategories[0].title)
-                                .font(.head_b_14)
-                            +
-                            Text("에서 더보기")
-                                .font(.body_r_14)
-
-                            Image(.chevronRight)
-                        }
-                        .foregroundColor(.baeminBlack)
-                    }
-                    .padding(.vertical, 10)
                 }
                 .tag(0)
 
@@ -90,10 +74,29 @@ struct CategoryView: View {
                     .tag(idx)
                 }
             }
-            .frame(height: 260)
+            .frame(height: 189)
             .tabViewStyle(.page(indexDisplayMode: .never))
+            
+            Divider().padding(.top, 12)
+
+            Button { } label: {
+                HStack(spacing: 4) {
+                    Text(viewModel.topCategories[viewModel.selectedIndex].title)
+                        .font(.head_b_14)
+                    +
+                    Text("에서 더보기")
+                        .font(.body_r_14)
+
+                    Image(.chevronRight)
+                }
+                .foregroundColor(.baeminBlack)
+            }
+            .padding(.vertical, 10)
         }
         .background(Color.white)
+        .clipShape(.rect(
+            cornerRadii: .init(topLeading: 10, topTrailing: 10)
+        ))
     }
 
     @ViewBuilder

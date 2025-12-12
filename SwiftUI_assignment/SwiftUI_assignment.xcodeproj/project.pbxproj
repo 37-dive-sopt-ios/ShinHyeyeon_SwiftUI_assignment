@@ -77,8 +77,8 @@
 		24C314EC2EEBD5D900C177A7 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
-				24C314F32EEBE37900C177A7 /* MartViewModel.swift */,
 				24C314F12EEBE36500C177A7 /* CategoryViewModel.swift */,
+				24C314F32EEBE37900C177A7 /* MartViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -158,14 +158,14 @@
 		24D6ED4E2EEB0B3300FF32DD /* View */ = {
 			isa = PBXGroup;
 			children = (
-				24C314E82EEBCD2500C177A7 /* MainTabView.swift */,
 				24C314E32EEB34AA00C177A7 /* Cell */,
+				24C314E82EEBCD2500C177A7 /* MainTabView.swift */,
+				24D6ED392EEB026800FF32DD /* TestView.swift */,
 				24D6ED362EEB026800FF32DD /* HeaderView.swift */,
 				24D6ED352EEB026800FF32DD /* CategoryView.swift */,
-				24D6ED342EEB026800FF32DD /* BannerView.swift */,
 				24D6ED372EEB026800FF32DD /* MartView.swift */,
+				24D6ED342EEB026800FF32DD /* BannerView.swift */,
 				24D6ED382EEB026800FF32DD /* RankingView.swift */,
-				24D6ED392EEB026800FF32DD /* TestView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -173,8 +173,8 @@
 		24D6ED4F2EEB0B3C00FF32DD /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				24C314EF2EEBE34F00C177A7 /* MartModel.swift */,
 				24C314ED2EEBE32E00C177A7 /* CategoryModel.swift */,
+				24C314EF2EEBE34F00C177A7 /* MartModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
