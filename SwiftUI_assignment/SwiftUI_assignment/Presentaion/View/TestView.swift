@@ -19,7 +19,6 @@ struct TestView: View {
                     MartView()
                     BannerView()
                     RankingView()
-                    Spacer()
                 }
             }
             .padding(.bottom, 60)
