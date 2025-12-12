@@ -14,6 +14,7 @@ struct TestView: View {
             VStack(spacing: 0) {
                 HeaderView()
                 CategoryView()
+                MartView()
                 Spacer()
             }
         }
