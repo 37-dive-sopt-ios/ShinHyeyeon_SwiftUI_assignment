@@ -8,40 +8,26 @@
 import SwiftUI
 
 struct CategoryView: View {
-    let categories = ["음식배달", "픽업", "장보기·쇼핑", "선물하기", "혜택모아보기"]
-    let foodCategories = ["한그릇", "치킨", "카페·디저트", "피자", "분식",
-                          "고기", "찜·탕", "야식", "패스트푸드", "픽업"]
-    let foodImages = ["food0", "food1", "food2", "food3", "food4",
-                      "food5", "food6", "food7", "food8", "food9"]
-    
-    @State private var selectedIndex: Int = 0
+
+    @StateObject private var viewModel = CategoryViewModel()
     @Namespace private var underlineNamespace
-    
+
     var body: some View {
         VStack(spacing: 0) {
             ScrollView(.horizontal, showsIndicators: false) {
                 HStack(spacing: 18) {
-                    ForEach(categories.indices, id: \.self) { index in
+                    ForEach(viewModel.topCategories.indices, id: \.self) { index in
                         Button {
                             withAnimation(.interactiveSpring) {
-                                selectedIndex = index
+                                viewModel.selectedIndex = index
                             }
                         } label: {
                             VStack(spacing: 12) {
-                                Text(categories[index])
+                                Text(viewModel.topCategories[index].title)
                                     .font(.head_b_18)
-                                    .foregroundColor(selectedIndex == index ? .baeminBlack : .baeminGray300)
-                                
-                                ZStack {
-                                    if selectedIndex == index {
-                                        Rectangle()
-                                            .frame(height: 3)
-                                            .foregroundStyle(Color.baeminBlack)
-                                            .matchedGeometryEffect(id: "underline", in: underlineNamespace)
-                                    } else {
-                                        Rectangle().frame(height: 3).opacity(0)
-                                    }
-                                }
+                                    .foregroundColor(viewModel.selectedIndex == index ? .baeminBlack : .baeminGray300)
+
+                                underlineView(isSelected: viewModel.selectedIndex == index)
                             }
                         }
                     }
@@ -49,26 +35,24 @@ struct CategoryView: View {
                 .padding(.horizontal, 16)
                 .padding(.top, 15)
             }
-            
-            Divider()
-                .padding(.top, 1)
-            
-            
-            TabView(selection: $selectedIndex) {
+
+            Divider().padding(.top, 1)
+
+            TabView(selection: $viewModel.selectedIndex) {
                 VStack {
                     let columns = Array(repeating: GridItem(.flexible(), spacing: 12), count: 5)
-                    
+
                     LazyVGrid(columns: columns, spacing: 12) {
-                        ForEach(foodCategories.indices, id: \.self) { i in
+                        ForEach(viewModel.foodCategories) { item in
                             VStack(spacing: 6) {
-                                Image(foodImages[i])
+                                Image(item.imageName)
                                     .resizable()
                                     .scaledToFit()
                                     .background(Color.baeminBackgroundWhite)
                                     .cornerRadius(20)
                                     .frame(width: 58, height: 58)
-                                
-                                Text(foodCategories[i])
+
+                                Text(item.title)
                                     .font(.body_r_14)
                                     .foregroundStyle(.baeminBlack)
                                     .lineLimit(1)
@@ -77,29 +61,29 @@ struct CategoryView: View {
                     }
                     .padding(.horizontal, 16)
                     .padding(.top, 12)
-                    
-                    Divider()
-                        .padding(.top, 12)
-                    
-                    Button {
-                        
-                    } label: {
+
+                    Divider().padding(.top, 12)
+
+                    Button { } label: {
                         HStack(spacing: 4) {
-                            Text("음식배달").font(.head_b_14).foregroundColor(.baeminBlack)
+                            Text(viewModel.topCategories[0].title)
+                                .font(.head_b_14)
                             +
-                            Text("에서 더보기").font(.body_r_14).foregroundColor(.baeminBlack)
+                            Text("에서 더보기")
+                                .font(.body_r_14)
+
                             Image(.chevronRight)
                         }
+                        .foregroundColor(.baeminBlack)
                     }
                     .padding(.vertical, 10)
                 }
                 .tag(0)
-                
-                
-                ForEach(1..<categories.count, id: \.self) { idx in
+
+                ForEach(1..<viewModel.topCategories.count, id: \.self) { idx in
                     VStack {
                         Spacer()
-                        Text("\(categories[idx])")
+                        Text(viewModel.topCategories[idx].title)
                             .foregroundColor(.baeminGray300)
                         Spacer()
                     }
@@ -110,6 +94,18 @@ struct CategoryView: View {
             .tabViewStyle(.page(indexDisplayMode: .never))
         }
         .background(Color.white)
+    }
+
+    @ViewBuilder
+    private func underlineView(isSelected: Bool) -> some View {
+        if isSelected {
+            Rectangle()
+                .frame(height: 3)
+                .foregroundStyle(Color.baeminBlack)
+                .matchedGeometryEffect(id: "underline", in: underlineNamespace)
+        } else {
+            Rectangle().frame(height: 3).opacity(0)
+        }
     }
 }
 
