@@ -22,6 +22,7 @@ struct TestView: View {
                     Spacer()
                 }
             }
+            .padding(.bottom, 60)
         }
         .ignoresSafeArea()
     }

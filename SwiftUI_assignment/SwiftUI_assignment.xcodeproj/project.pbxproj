@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		24C314E52EEB34D500C177A7 /* MartCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24C314E42EEB34D400C177A7 /* MartCell.swift */; };
 		24C314E72EEBC9BE00C177A7 /* RankingCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24C314E62EEBC9BB00C177A7 /* RankingCell.swift */; };
+		24C314E92EEBCD2500C177A7 /* MainTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24C314E82EEBCD2500C177A7 /* MainTabView.swift */; };
+		24C314EB2EEBCF4D00C177A7 /* TabItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24C314EA2EEBCF4900C177A7 /* TabItemView.swift */; };
 		24D6ED422EEB026800FF32DD /* SwiftUI_assignmentApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24D6ED302EEB026800FF32DD /* SwiftUI_assignmentApp.swift */; };
 		24D6ED432EEB026800FF32DD /* Font+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24D6ED322EEB026800FF32DD /* Font+.swift */; };
 		24D6ED442EEB026800FF32DD /* BannerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24D6ED342EEB026800FF32DD /* BannerView.swift */; };
@@ -26,6 +28,8 @@
 /* Begin PBXFileReference section */
 		24C314E42EEB34D400C177A7 /* MartCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MartCell.swift; sourceTree = "<group>"; };
 		24C314E62EEBC9BB00C177A7 /* RankingCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RankingCell.swift; sourceTree = "<group>"; };
+		24C314E82EEBCD2500C177A7 /* MainTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabView.swift; sourceTree = "<group>"; };
+		24C314EA2EEBCF4900C177A7 /* TabItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabItemView.swift; sourceTree = "<group>"; };
 		24D6ECC82EEAE18D00FF32DD /* SwiftUI_assignment.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftUI_assignment.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		24D6ED302EEB026800FF32DD /* SwiftUI_assignmentApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUI_assignmentApp.swift; sourceTree = "<group>"; };
 		24D6ED322EEB026800FF32DD /* Font+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Font+.swift"; sourceTree = "<group>"; };
@@ -55,6 +59,7 @@
 		24C314E32EEB34AA00C177A7 /* Cell */ = {
 			isa = PBXGroup;
 			children = (
+				24C314EA2EEBCF4900C177A7 /* TabItemView.swift */,
 				24C314E62EEBC9BB00C177A7 /* RankingCell.swift */,
 				24C314E42EEB34D400C177A7 /* MartCell.swift */,
 			);
@@ -135,6 +140,7 @@
 		24D6ED4E2EEB0B3300FF32DD /* View */ = {
 			isa = PBXGroup;
 			children = (
+				24C314E82EEBCD2500C177A7 /* MainTabView.swift */,
 				24C314E32EEB34AA00C177A7 /* Cell */,
 				24D6ED362EEB026800FF32DD /* HeaderView.swift */,
 				24D6ED352EEB026800FF32DD /* CategoryView.swift */,
@@ -233,9 +239,11 @@
 				24D6ED442EEB026800FF32DD /* BannerView.swift in Sources */,
 				24D6ED452EEB026800FF32DD /* CategoryView.swift in Sources */,
 				24D6ED462EEB026800FF32DD /* HeaderView.swift in Sources */,
+				24C314E92EEBCD2500C177A7 /* MainTabView.swift in Sources */,
 				24D6ED472EEB026800FF32DD /* MartView.swift in Sources */,
 				24C314E52EEB34D500C177A7 /* MartCell.swift in Sources */,
 				24D6ED482EEB026800FF32DD /* RankingView.swift in Sources */,
+				24C314EB2EEBCF4D00C177A7 /* TabItemView.swift in Sources */,
 				24C314E72EEBC9BE00C177A7 /* RankingCell.swift in Sources */,
 				24D6ED492EEB026800FF32DD /* TestView.swift in Sources */,
 			);
